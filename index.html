@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a basic counter app that can be used for simple activities that require a count keep."
+    />
+    <meta name="author" content="Regal Shabazz" />
+    <title>counterApp</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>counter app</h1>
+      <div id="display" class="display">0</div>
+
+      <div class="buttons">
+        <button id="increment-btn" onclick="increment()">increment</button>
+        <button id="decrement-btn" onclick="decrement()">decrement</button>
+        <button id="save-count-btn" onclick="saveCount()">save count</button>
+        <button id="delete-count-btn" onclick="removeLastEntry()">remove count</button>        
+      </div>
+
+      <div id="saved-counts-display">
+        <h3>saved counts</h3>
+        <p id="entry-message">No entries yet</p>
+        <ul id="saved-counts-list" class="display">
+        </ul>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
